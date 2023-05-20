@@ -1,0 +1,135 @@
+#library {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: normal;
+}
+
+#recent p, #playlists p {
+    float: right;
+    margin-right: 25px;
+    position: relative;
+    bottom: 11px;
+    color: var(--text-color);
+    font-weight: bold;      
+}
+
+#recent p:hover, #playlists p:hover {
+    text-decoration: underline;
+}
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#recent, #playlists {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#recent-box, #playlists-box {
+    margin-top: 20px;
+    width: 1200px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+}
+
+#musicBox {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+#musicBox:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+}
+
+
+
+#playicon {
+    font-size: 50px;
+    z-index: 2;
+    top: 48%;
+    left: 64%;
+    position: absolute;
+    color: rgb(24, 189, 2);
+    transition: all 0.5s;
+    display: none;
+}
+
+#title {
+    color: white;
+    font-weight: bold;
+    align-self: start;
+}
+
+
+
+#artist {
+    color: var(--text-color);
+    align-self: start;
+}
+
+#playlists {
+    margin-top: 40px;
+}
+
+
+#company {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+#company div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 130px;
+    gap: 5px;
+}
+
+#company p {
+    font-weight: bold;
+}
+
+#company a {
+    gap: 5px;
+}
+
+#company a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#company #icons {
+    flex-direction: row;
+    margin-left: auto;
+    font-size: 25px;
+}
